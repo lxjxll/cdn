@@ -55,7 +55,7 @@ if(document.getElementById('history-container')){
             direction: 'vertical',
             autoplay: {
                 disableOnInteraction: true,
-                delay:5000
+                delay:2500
             },
 
             mousewheel:false,
