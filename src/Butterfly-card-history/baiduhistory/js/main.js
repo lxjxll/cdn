@@ -33,7 +33,7 @@ if(document.getElementById('history-container')){
     }
     var history_data = history_get_data()
     fetch(history_data[0]).then(data=>data.json()).then(data=>{
-        console.log(data[history_data[1]])
+        // console.log(data[history_data[1]])
         html_item =''
         for (var item of data[history_data[1]]){
             html_item += '<div class="swiper-slide history_slide"><span class="history_slide_time">A.D.' +
@@ -54,7 +54,7 @@ if(document.getElementById('history-container')){
             direction: 'vertical',
             autoplay: {
                 disableOnInteraction: true,
-                delay:2500
+                delay:4000
             },
 
             mousewheel:false,
