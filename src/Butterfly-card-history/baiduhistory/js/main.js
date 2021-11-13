@@ -3,7 +3,6 @@ if(document.getElementById('history-container')){
         if (typeof text === 'string') {
             var temp = document.createElement('div');
             temp.innerHTML = text;
-            // 防止元素太多 进行提速
             var frag = document.createDocumentFragment();
             while (temp.firstChild) {
                 frag.appendChild(temp.firstChild);
